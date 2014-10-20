@@ -1,9 +1,24 @@
-package se;
+package se.hig.g1.data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+/**
+ * 
+ * Detta är bara en exempel klass som vi använder i projektet..
+ * Utgå från denna när vi kodar
+ * 2014-12-20
+ * 
+ * 
+ *
+ */
+
+
+
+
+
 
 @Entity
 public class Todo {

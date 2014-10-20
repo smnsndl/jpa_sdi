@@ -1,4 +1,4 @@
-package se;
+package se.hig.g1.app;
 
 import java.util.List;
 import java.util.Scanner;
@@ -7,6 +7,21 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
+
+import se.hig.g1.data.Databordet;
+import se.hig.g1.data.Todo;
+
+
+/**
+ * 
+ * Applikationsklassen som innehåller main metoden.
+ * 
+ * 
+ * 
+ * @author fredrik
+ *
+ */
+
 
 public class Main {
 	private static final String PERSISTENCE_UNIT_NAME = "test";

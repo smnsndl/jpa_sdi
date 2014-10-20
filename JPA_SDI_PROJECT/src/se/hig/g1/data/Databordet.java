@@ -1,13 +1,22 @@
-package se;
+package se.hig.g1.data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+/**
+ * 
+ * Hanterar objekt från databastabellen Databordet. 
+ * 2014-10-20
+ * 
+ * @author Grupp 1
+ *
+ */
+
 @Entity
 public class Databordet {
 	
-	
+	// Primary key.
 	@Id @GeneratedValue
 	private int knnr;
 	
