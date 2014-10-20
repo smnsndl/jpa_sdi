@@ -28,12 +28,7 @@ public class Main {
 			
 			switch(val) {
 			case 1:
-				System.out.println("Skriv en todo text.");
-				String summary = scan.nextLine();
-				System.out.println("Skriv beskrivning");
-				String desc = scan.nextLine();
-				addTodo(summary, desc);
-				System.out.println("Todo tillagd i postgres.");
+				// Code here...
 				break;
 			case 2:
 				System.out.println();
@@ -51,18 +46,20 @@ public class Main {
 		
 	}
 	
-
+	// Hämta data från databasen.. //Test
 	private static void printFromDb() {
 		// read the existing entries and write to console
-		Query q = em.createQuery("select t from Todo t");
-		List<Todo> todoList = q.getResultList();
-		for (Todo todo : todoList) {
-			System.out.println(todo);
+		Query q = em.createQuery("select d from Databordet d");
+		List<Databordet> databordetList = q.getResultList();
+		for (Databordet databord : databordetList) {
+			System.out.println(databord);
 		}
-		System.out.println("Size: " + todoList.size());
+		System.out.println("Size: " + databordetList.size());
 		
 	}
 	
+	
+	//Lägga in data i databasen. test.
 	private static void addTodo(String summary, String desc) {
 		// create new todo
 		em.getTransaction().begin();
